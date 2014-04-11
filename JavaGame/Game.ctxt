@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Game\r\n
+comment1.params=
+comment1.target=void\ playGame()
+comment2.params=
+comment2.target=void\ createNewPlayer()
+comment3.params=
+comment3.target=void\ rollDice()
+comment4.params=
+comment4.target=void\ displayPlayerPosition()
+comment5.params=
+comment5.target=void\ displayHelp()
+comment6.params=
+comment6.target=void\ exitGame()
+comment7.params=
+comment7.target=void\ winnerMessage()
+numComments=8
