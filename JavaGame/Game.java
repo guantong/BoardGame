@@ -2,7 +2,8 @@ import java.util.*;
 import java.lang.*;
 
 /**
- * this game is design for two player to playing a boardgame that has maximum 50 move each
+ * this game is design for two player to playing a boardgame that has maximum 50 move each 
+ * and who reach position will be the winner
  * 
  * @author Guantong Wo
  * @version 1.0
