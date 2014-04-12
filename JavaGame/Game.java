@@ -228,7 +228,6 @@ public class Game
         System.out.println("Game finished. You must start a new game");
         System.out.println("The last game won by Player " + winner + "\n");
         System.out.println("Please start new game to play again\n" + 
-            "or exit/select option 5");
-        System.out.println("=================================\n");
+            "or exit/select option 5\n=================================\n");
     }
 }
