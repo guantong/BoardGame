@@ -31,10 +31,10 @@ public class Game
         playerTwo = new Player();
     }
 
+    //main method
     public void playGame()
     throws InterruptedException
     {
-
         String option = "";
         int numberOption = 0;
         
@@ -44,17 +44,17 @@ public class Game
 
         do
         {
-            //Welcome message and option display
-            
             try
             {
+                //Welcome message and option display
                 menu.printMenu();
                 option = console.nextLine();
                 numberOption = Integer.parseInt(option);
             }
             catch(NumberFormatException e)
             {
-                System.out.print("Please enter a numeric input\n\n");
+                System.out.print("Please enter a numeric input\n" + 
+                "=================================\n\n");
                 continue;
             }
             
@@ -66,7 +66,7 @@ public class Game
                 createNewPlayer();
                 break;
 
-                //roll a dice for both player    
+                //roll dice for both player    
                 case "2":
                 rollDice();
                 break;
@@ -100,6 +100,7 @@ public class Game
         System.exit(0);
     }
 
+    //start new game
     public void createNewPlayer()
     {
         String inputName = "";
@@ -122,6 +123,7 @@ public class Game
         System.out.println("=================================\n");
     }
 
+    //roll dice for both player 
     public void rollDice()
     {
         int tempPosition = 0;
@@ -186,6 +188,7 @@ public class Game
         System.out.println("=================================\n");
     }
 
+    //display current position for both players
     public void displayPlayerPosition()
     {
         System.out.println(playerOne.getName() + " is on position " + 
@@ -194,9 +197,10 @@ public class Game
         System.out.println("=================================\n");
     }
 
+    //display game help
     public void displayHelp()
     {
-        System.out.println("=================================\n" +
+        System.out.println("=================================\n\n" +
             "=== How to start game ===\n" +
             "To start game please enter option 1 " + 
             "and followed by enter player names (yours and your opponents)\n" +
@@ -210,12 +214,13 @@ public class Game
             "=== How to display players position during game play ===\n" +
             "select option 3/display player position " + 
             "this will display current position for each player\n\n" +
-            "== How to exit game ===" + 
+            "== How to exit game ===\n" + 
             "select option 5/exit to exit game completely " + 
             "and all records will be lost\n\n" + 
             "Good luck!\n=================================\n");
     }
 
+    //quit game
     public void exitGame()
     throws InterruptedException
     {
@@ -223,6 +228,7 @@ public class Game
         Thread.sleep(2000);
     }
 
+    //display winner message
     public void winnerMessage()
     {
         System.out.println("Game finished. You must start a new game");
