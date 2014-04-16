@@ -41,6 +41,6 @@ public class Player
     
     public void setPosition(int newPosition)
     {
-        position += newPosition;
+        position = newPosition;
     }
 }
